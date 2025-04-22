@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pannukakun_tilaus_sivu</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h1>Pannukakun tilaus</h1>
+    <img src="pannukakku.jpeg" alt="Pannukakku" />
+    <h2>Valitse koko</h2>
+    <label for="koko" id="koko">Koko:</label><br />
+    <input
+      type="radio"
+      id="pikkupannari"
+      name="koko"
+      value="pieni"
+    />pikkupannari (5€) <br />
+    <input type="radio" id="normipannari" name="koko" value="normi" />normi
+    pannari (8€)
+    <br />
+    <input type="radio" id="suuri_pannari" name="koko" value="suuri" />suuri
+    pannari (10€) <br />
+
+    <h2>Valitse Lisukkeet</h2>
+    <label for="hillo">Lisukkeet:</label><br />
+    <input type="checkbox" id="hillo" name="lisuke" value="hillo" />Hillo (2€)
+    <br />
+
+    <input
+      type="checkbox"
+      id="Kermavaahto"
+      name="lisuke"
+      value="kermavaahto"
+    />Kermavaahto (3€)<br />
+    <input
+      type="checkbox"
+      id="vaahterasiirappi"
+      name="lisuke"
+      value="vaahterasiirappi"
+    />Vaahterasiirappi (4€)<br />
+
+    <h3>
+      Hinta:
+      <div id="hinta"></div>
+    
+    <button id="tilaa">Tilaa pannukakku</button>
+    <script src="lisuke.js"></script>
+  </body>
+</html>
